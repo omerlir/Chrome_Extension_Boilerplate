@@ -10,8 +10,17 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "defaul_title": "Project",
-    "defaul_icon": "icon.png"
+    "default_title": "Project",
+    "default_icon": "icon.png"
   },
-  "options_page": "options.html"
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ]
 }
