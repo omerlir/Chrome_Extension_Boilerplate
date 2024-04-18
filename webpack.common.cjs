@@ -1,5 +1,5 @@
 const path = require('path')
-const copyPlugin = require('copy-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 const HtmlPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
@@ -31,7 +31,7 @@ module.exports = {
     new CleanWebpackPlugin({
       cleanStaleWebpackAssets: false,
     }),
-    new copyPlugin({
+    new CopyPlugin({
       patterns: [
         {
           from: path.resolve('src/static'),
