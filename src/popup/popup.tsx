@@ -7,3 +7,5 @@ const test = <img src="icon.png" />
 const root = document.createElement('div')
 document.body.appendChild(root)
 createRoot(root).render(test)
+
+// shachar was here
